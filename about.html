@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Trinity Investment Homes — Malden, MA Real Estate</title>
+    <meta name="description" content="Learn about Trinity Investment Homes — a Malden, Massachusetts based residential real estate investment firm founded by Chris Ejimbe. Our story, mission, values, and team.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#111111">
+    <link rel="canonical" href="https://trinityinvestmenthomes.com/about.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Cpath d='M9 29 32 10l23 19v25H9z' fill='none' stroke='%23C9A227' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M23 54V35h18v19M25 25h14M32 18v14' fill='none' stroke='%23C9A227' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trinity Investment Homes">
+    <meta property="og:title" content="About Us | Trinity Investment Homes">
+    <meta property="og:description" content="Building wealth through strategic residential real estate in Malden, MA and select Northeast markets.">
+    <meta property="og:url" content="https://trinityinvestmenthomes.com/about.html">
+    <meta property="og:image" content="https://trinityinvestmenthomes.com/logo.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Trinity Investment Homes">
+    <meta name="twitter:description" content="Our story, mission, values, and the team behind Trinity Investment Homes.">
+    <meta name="twitter:image" content="https://trinityinvestmenthomes.com/logo.PNG">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Trinity Investment Homes",
+        "url": "https://trinityinvestmenthomes.com/about.html",
+        "mainEntity": {
+            "@type": "RealEstateAgent",
+            "name": "Trinity Investment Homes",
+            "url": "https://trinityinvestmenthomes.com/",
+            "logo": "https://trinityinvestmenthomes.com/logo.PNG",
+            "description": "Residential real estate acquisition, renovation, and investment partnerships based in Malden, Massachusetts.",
+            "telephone": "+1-781-555-0198",
+            "email": "info@trinityinvestmenthomes.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Malden",
+                "addressRegion": "MA",
+                "addressCountry": "US"
+            },
+            "founder": { "@type": "Person", "name": "Chris Ejimbe" }
+        }
+    }
+    </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#111111',
+                        brandGold: '#C9A227',
+                        brandGoldHover: '#B08C1E',
+                        brandOffWhite: '#F5F5F5',
+                        brandGray: '#1E1E1E',
+                        brandLightGray: '#888888'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Montserrat', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111111;
+            color: #FFFFFF;
+        }
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(201, 162, 39, 0.15);
+        }
+        .glass-panel-gold {
+            background: rgba(201, 162, 39, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111111; }
+        ::-webkit-scrollbar-thumb { background: #C9A227; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B08C1E; }
+
+        /* Reveal on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
+
+        /* Gold gradient text */
+        .text-gold-gradient {
+            background: linear-gradient(120deg, #C9A227 0%, #F0DE9A 45%, #C9A227 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Timeline line */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 8px;
+            bottom: 8px;
+            width: 1px;
+            background: linear-gradient(to bottom, rgba(201,162,39,0.6), rgba(201,162,39,0.08));
+        }
+        @media (min-width: 768px) {
+            .timeline-line::before { left: 50%; transform: translateX(-0.5px); }
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-white antialiased selection:bg-brandGold selection:text-black">
+
+    <!-- TOP ANNOUNCEMENT / BRAND STRIP -->
+    
+
+    <!-- STICKY NAVBAR -->
+    <header class="sticky top-0 z-50 bg-stone-950/85 backdrop-blur-xl border-b border-brandGold/20 shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="./index.html" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center overflow-hidden rounded-full border border-brandGold/40 bg-gradient-to-br from-brandGold/15 to-transparent shadow-[0_0_24px_rgba(212,175,55,0.12)]">
+                        <img src="./logo.PNG" alt="Trinity Investment Homes logo" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" />
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-cinzel text-xl sm:text-2xl font-bold tracking-[0.16em] leading-none text-white group-hover:text-brandGold transition-colors duration-300">TRINITY</span>
+                        <span class="font-cinzel text-[9px] sm:text-[10px] tracking-[0.28em] text-brandGold font-semibold mt-1.5">INVESTMENT HOMES</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-[0.16em] text-stone-300">
+                    <a href="./index.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-brandGold after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                    <a href="./about.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-brandGold after:transition-all after:duration-300 hover:after:w-full">About Us</a>
+                    <a href="./services.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-brandGold after:transition-all after:duration-300 hover:after:w-full">Our Services</a>
+                    <a href="./projects.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-brandGold after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+                    <a href="./investors.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-brandGold after:transition-all after:duration-300 hover:after:w-full">Investors</a>
+                    <a href="./contact.html" class="relative py-2 hover:text-brandGold transition-colors duration-300 after:absolute.after:left-0.after:-bottom-1.after:h-px.after:w-0.after:bg-brandGold.after:transition-all.after:duration-300.hover:after:w-full">Contact</a>
+                </nav>
+
+                <!-- GET IN TOUCH CTA -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="./contact.html" class="group inline-flex items-center gap-2 px-5 py-3 bg-brandGold hover:bg-brandGoldHover text-black font-bold text-[11px] uppercase tracking-[0.16em] rounded-sm transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-brandGold/20 hover:shadow-brandGold/35">
+                        Get In Touch <i class="fa-solid fa-arrow-right text-[10px] transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-menu-btn" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-full border border-stone-700 text-stone-300 hover:border-brandGold/60 hover:text-brandGold hover:bg-brandGold/5 focus:outline-none focus:ring-2 focus:ring-brandGold/50 transition-all duration-300" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-stone-950/98 backdrop-blur-2xl border-t border-brandGold/15 border-b border-brandGold/30 px-6 pt-7 pb-8 shadow-[0_24px_50px_rgba(0,0,0,0.55)]">
+            <div class="max-w-xl mx-auto">
+                <div class="flex items-center justify-between mb-5">
+                    <span class="font-cinzel text-[10px] uppercase tracking-[0.3em] text-brandGold">Explore Trinity</span>
+                    <span class="h-px w-12 bg-brandGold/40"></span>
+                </div>
+                <nav aria-label="Mobile navigation" class="divide-y divide-stone-800/80 border-y border-stone-800/80">
+                    <a href="./index.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">01</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">Home</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                    <a href="./about.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">02</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">About Us</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                    <a href="./services.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">03</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">Our Services</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                    <a href="./projects.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">04</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">Projects</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                    <a href="./investors.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">05</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">Investors</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                    <a href="./contact.html" class="group flex items-center justify-between py-4 text-stone-200 hover:text-brandGold transition-colors">
+                        <span class="flex items-center gap-4"><span class="font-cinzel text-[10px] tracking-widest text-brandGold/70">06</span><span class="text-xs font-semibold uppercase tracking-[0.2em]">Contact</span></span>
+                        <i class="fa-solid fa-arrow-right text-[10px] text-stone-600 transition-all group-hover:translate-x-1 group-hover:text-brandGold"></i>
+                    </a>
+                </nav>
+                <a href="./contact.html" class="group mt-6 flex items-center justify-between w-full px-5 py-4 bg-brandGold hover:bg-brandGoldHover text-stone-950 rounded-sm transition-all duration-300 shadow-lg shadow-brandGold/10">
+                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]">Get In Touch</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                </a>
+                <p class="mt-5 text-center text-[9px] uppercase tracking-[0.22em] text-stone-500">Building Value. Creating Legacies.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="relative overflow-hidden bg-stone-950 border-b border-stone-800">
+        <div class="absolute inset-0 z-0">
+            <img src=" " alt="" aria-hidden="true" class="w-full h-full object-cover object-center opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-brandDark via-brandDark/90 to-brandDark/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-brandDark/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <!-- Breadcrumb -->
+          
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5">
+                <div class="lg:col-span-7 min-h-[340px] sm:min-h-[400px] flex flex-col justify-between rounded-2xl border border-stone-700/80 bg-stone-900/70 p-7 sm:p-10 lg:p-12 shadow-2xl backdrop-blur-sm">
+                    <div class="inline-flex w-fit items-center gap-2 rounded-full border border-brandGold/40 bg-brandGold/10 px-3 py-1.5">
+                        <span class="w-2 h-2 rounded-full bg-brandGold animate-ping"></span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-brandGold font-semibold">Est. Malden, Massachusetts</span>
+                    </div>
+                    <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight max-w-3xl mt-12">
+                        We Build More Than <span class="text-gold-gradient">Homes.</span><br class="hidden sm:block">
+                        We Build <span class="text-brandGold">Legacies.</span>
+                    </h1>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-5">
+                    <div class="rounded-2xl border border-brandGold/30 bg-brandGold/[0.08] p-6 sm:p-7 flex flex-col justify-between min-h-[150px]">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-brandGold/80">Our foundation</span>
+                        <p class="font-cinzel text-xl sm:text-2xl text-white leading-snug">Discipline. Craftsmanship. Trust.</p>
+                    </div>
+                    <div class="rounded-2xl border border-stone-700/80 bg-stone-900/70 p-6 sm:p-7 flex flex-col justify-between min-h-[150px]">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-stone-500">What we do</span>
+                        <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
+                            Trinity Investment Homes is a residential real estate investment firm turning overlooked properties into thriving homes and dependable returns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- OUR STORY -->
+    <section class="py-24 bg-brandDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Image Composition -->
+                <div class="lg:col-span-5 relative reveal">
+                    <div class="relative z-10 rounded-sm overflow-hidden border border-stone-800 shadow-2xl">
+                        <img src="https://i.pinimg.com/1200x/a7/a8/02/a7a8026b1766f2e5d9999003be8f0640.jpg" alt="Renovated residential property by Trinity Investment Homes" class="w-full h-auto object-cover">
+                    </div>
+                    <!-- Decorative Frame -->
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-brandGold/40 rounded-sm z-0 hidden sm:block"></div>
+
+                    <!-- Founder Badge Overlay -->
+                    <div class="absolute bottom-6 left-6 z-20 glass-panel p-4 rounded border-l-4 border-brandGold max-w-xs">
+                        <div class="text-white font-cinzel font-bold text-sm">CHRIS EJIMBE</div>
+                        <div class="text-brandGold text-xs uppercase tracking-wider">Founder &amp; CEO</div>
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="lg:col-span-7 reveal" style="transition-delay: 120ms;">
+                    <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">Our Story</h2>
+                    <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                        From a Single Renovation to a Legacy of Value
+                    </h3>
+
+                    <div class="space-y-5 text-stone-300 text-sm sm:text-base leading-relaxed font-light">
+                        <p>
+                            <strong class="text-white font-semibold">Trinity Investment Homes</strong> began with a simple observation: too many well-built homes in New England neighborhoods were being left behind — outdated, undervalued, and full of untapped potential. Founder <strong class="text-white font-semibold">Chris Ejimbe</strong> saw something different. He saw opportunity, dignity, and long-term value waiting to be unlocked.
+                        </p>
+                        <p>
+                            What started as a single renovation project in Malden, Massachusetts has grown into a disciplined investment operation spanning acquisition, construction management, and asset disposition across select Northeast markets. Every project follows the same playbook: buy with precision, renovate with craftsmanship, and exit with strategy.
+                        </p>
+                        <p class="text-stone-400 text-sm">
+                            Today, Trinity partners with private investors, joint-venture partners, and property owners who share a belief that real estate — done honestly and done well — is one of the most reliable paths to generational wealth.
+                        </p>
+                    </div>
+
+                    <!-- Quote -->
+                    <blockquote class="mt-8 p-5 bg-brandDark border-l-2 border-brandGold italic text-stone-300 text-sm leading-relaxed">
+                        "Our core mission isn't just buying houses — it's creating lasting neighborhood value and delivering reliable, legacy-building returns for our partners."
+                        <footer class="mt-3 not-italic text-[10px] uppercase tracking-[0.22em] text-brandGold font-semibold">— Chris Ejimbe, Founder &amp; CEO</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- TIMELINE / MILESTONES -->
+    <section class="py-24 bg-stone-950 border-t border-stone-800 relative overflow-hidden">
+        <video class="absolute inset-0 w-full h-full object-cover opacity-20" autoplay muted loop playsinline>
+            <source src="https://www.pexels.com/download/video/34346094/ " type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-stone-950/90 via-stone-950/75 to-stone-950/90"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">The Journey</h2>
+                <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">MILESTONES ALONG THE WAY</h3>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="relative timeline-line pl-10 md:pl-0 space-y-12">
+
+                <!-- Item 1 -->
+                <div class="relative md:grid md:grid-cols-2 md:gap-12 items-center reveal">
+                    <div class="md:text-right md:pr-4">
+                        <span class="font-cinzel text-brandGold text-sm font-bold tracking-[0.2em]">FOUNDATION</span>
+                        <h4 class="font-cinzel text-xl font-bold text-white mt-2 mb-2">The First Property</h4>
+                        <p class="text-stone-400 text-sm leading-relaxed">Chris Ejimbe acquires and personally renovates the first property in Malden, MA — establishing the craftsmanship standard that still defines every Trinity project.</p>
+                    </div>
+                    <div class="absolute left-0 md:relative md:left-auto top-1.5 md:top-auto w-6 h-6 rounded-full bg-brandDark border-2 border-brandGold flex items-center justify-center md:mx-auto">
+                        <span class="w-2 h-2 rounded-full bg-brandGold"></span>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative md:grid md:grid-cols-2 md:gap-12 items-center reveal">
+                    <div class="hidden md:block"></div>
+                    <div class="absolute left-0 md:relative md:left-auto top-1.5 md:top-auto w-6 h-6 rounded-full bg-brandDark border-2 border-brandGold flex items-center justify-center md:mx-auto md:order-2">
+                        <span class="w-2 h-2 rounded-full bg-brandGold"></span>
+                    </div>
+                    <div class="md:pl-4 md:order-3">
+                        <span class="font-cinzel text-brandGold text-sm font-bold tracking-[0.2em]">EXPANSION</span>
+                        <h4 class="font-cinzel text-xl font-bold text-white mt-2 mb-2">Building the Operation</h4>
+                        <p class="text-stone-400 text-sm leading-relaxed">Trinity formalizes its acquisition, construction, and disposition process — bringing in vetted contractors and a repeatable underwriting model.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative md:grid md:grid-cols-2 md:gap-12 items-center reveal">
+                    <div class="md:text-right md:pr-4">
+                        <span class="font-cinzel text-brandGold text-sm font-bold tracking-[0.2em]">PARTNERSHIPS</span>
+                        <h4 class="font-cinzel text-xl font-bold text-white mt-2 mb-2">Investor Capital Deployed</h4>
+                        <p class="text-stone-400 text-sm leading-relaxed">Private investors and joint-venture partners begin funding Trinity projects, secured by first-lien real estate positions and structured profit-share terms.</p>
+                    </div>
+                    <div class="absolute left-0 md:relative md:left-auto top-1.5 md:top-auto w-6 h-6 rounded-full bg-brandDark border-2 border-brandGold flex items-center justify-center md:mx-auto">
+                        <span class="w-2 h-2 rounded-full bg-brandGold"></span>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative md:grid md:grid-cols-2 md:gap-12 items-center reveal">
+                    <div class="hidden md:block"></div>
+                    <div class="absolute left-0 md:relative md:left-auto top-1.5 md:top-auto w-6 h-6 rounded-full bg-brandGold flex items-center justify-center md:mx-auto md:order-2 ring-4 ring-brandGold/20">
+                        <span class="w-2 h-2 rounded-full bg-brandDark"></span>
+                    </div>
+                    <div class="md:pl-4 md:order-3">
+                        <span class="font-cinzel text-brandGold text-sm font-bold tracking-[0.2em]">TODAY</span>
+                        <h4 class="font-cinzel text-xl font-bold text-white mt-2 mb-2">Prime Northeast Markets</h4>
+                        <p class="text-stone-400 text-sm leading-relaxed">Trinity continues to scale across Malden and select Northeast markets, delivering renovated homes and dependable returns for a growing partner network.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="py-24 bg-brandDark border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">Leadership</h2>
+                <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">THE PEOPLE BEHIND TRINITY</h3>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 auto-rows-[minmax(180px,auto)]">
+
+                <!-- Founder Profile -->
+                <div class="lg:col-span-7 glass-panel rounded-[28px] p-8 sm:p-10 border border-brandGold/20 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 shadow-[0_0_0_1px_rgba(212,175,55,0.05)] reveal">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0 mb-6">
+                        <div class="w-20 h-20 rounded-full bg-brandGold/15 border border-brandGold/40 flex items-center justify-center text-brandGold font-cinzel font-bold text-2xl shrink-0 shadow-[0_0_25px_rgba(212,175,55,0.18)]">
+                            CE
+                        </div>
+                        <div>
+                            <h4 class="font-cinzel text-2xl font-bold text-white">CHRIS EJIMBE</h4>
+                            <p class="text-brandGold text-xs uppercase tracking-[0.22em] font-semibold mt-1">Founder &amp; Chief Executive Officer</p>
+                        </div>
+                    </div>
+
+                    <p class="text-stone-300 text-sm leading-relaxed mb-5 font-light">
+                        Chris founded Trinity Investment Homes with a straightforward philosophy: treat every property as if your own family were going to live in it, and treat every investor as a long-term partner rather than a transaction.
+                    </p>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                        He leads acquisitions, underwriting, and construction oversight across the firm's portfolio — pairing hands-on renovation experience with disciplined financial analysis. His focus is simple: protect capital first, then create value that compounds.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] font-semibold text-brandGold bg-brandGold/10 border border-brandGold/25 rounded-full">Acquisitions</span>
+                        <span class="px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] font-semibold text-brandGold bg-brandGold/10 border border-brandGold/25 rounded-full">Underwriting</span>
+                        <span class="px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] font-semibold text-brandGold bg-brandGold/10 border border-brandGold/25 rounded-full">Construction Management</span>
+                        <span class="px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] font-semibold text-brandGold bg-brandGold/10 border border-brandGold/25 rounded-full">Asset Disposition</span>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-stone-800 text-xs text-stone-300 space-y-2">
+                        <div><i class="fa-solid fa-phone text-brandGold w-5"></i> 781.555.0198</div>
+                        <div><i class="fa-solid fa-envelope text-brandGold w-5"></i> info@trinityinvestmenthomes.com</div>
+                    </div>
+                </div>
+
+                <!-- Operating Team -->
+                <div class="lg:col-span-5 grid gap-5">
+                    <div class="p-6 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800 rounded-[24px] hover:border-brandGold/50 transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 text-brandGold flex items-center justify-center mb-4 text-lg ring-1 ring-brandGold/20">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h5 class="font-cinzel text-base font-bold text-white mb-2">Construction &amp; Renovation</h5>
+                        <p class="text-stone-400 text-xs leading-relaxed">A vetted network of licensed trades and project managers who deliver on schedule, on budget, and to a finish standard we stand behind.</p>
+                    </div>
+
+                    <div class="p-6 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800 rounded-[24px] hover:border-brandGold/50 transition-all duration-300 reveal" style="transition-delay: 160ms;">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 text-brandGold flex items-center justify-center mb-4 text-lg ring-1 ring-brandGold/20">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <h5 class="font-cinzel text-base font-bold text-white mb-2">Finance &amp; Investor Relations</h5>
+                        <p class="text-stone-400 text-xs leading-relaxed">Transparent reporting, clear deal structures, and regular updates — so partners always know exactly where their capital stands.</p>
+                    </div>
+
+                    <div class="p-6 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800 rounded-[24px] hover:border-brandGold/50 transition-all duration-300 reveal" style="transition-delay: 220ms;">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 text-brandGold flex items-center justify-center mb-4 text-lg ring-1 ring-brandGold/20">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <h5 class="font-cinzel text-base font-bold text-white mb-2">Sales &amp; Disposition</h5>
+                        <p class="text-stone-400 text-xs leading-relaxed">Market positioning, staging, and pricing strategy designed to realize maximum value at exit — or optimize long-term rental yield.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION / VISION / PROMISE -->
+    <section class="py-24 bg-stone-950 border-y border-stone-800 relative overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-brandGold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-brandGold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">What Drives Us</h2>
+                <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">MISSION, VISION &amp; PROMISE</h3>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-[minmax(220px,auto)]">
+
+                <!-- Mission -->
+                <div class="group md:col-span-4 glass-panel p-8 rounded-[28px] hover:border-brandGold transition-all duration-300 hover:-translate-y-2 reveal bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800">
+                    <div class="w-16 h-16 rounded-full bg-brandGold/10 flex items-center justify-center mb-6 text-brandGold text-2xl group-hover:bg-brandGold group-hover:text-black transition-all ring-1 ring-brandGold/20">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h4 class="font-cinzel text-xl font-bold text-white mb-3">OUR MISSION</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        To identify undervalued residential real estate and transform it into high-quality homes that strengthen neighborhoods, reward investors, and raise the standard of living in the communities we serve.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="group md:col-span-4 glass-panel p-8 rounded-[28px] hover:border-brandGold transition-all duration-300 hover:-translate-y-2 reveal bg-gradient-to-br from-brandGold/10 via-stone-900 to-stone-950 border border-brandGold/20 md:translate-y-4" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 rounded-full bg-brandGold/10 flex items-center justify-center mb-6 text-brandGold text-2xl group-hover:bg-brandGold group-hover:text-black transition-all ring-1 ring-brandGold/20">
+                        <i class="fa-solid fa-binoculars"></i>
+                    </div>
+                    <h4 class="font-cinzel text-xl font-bold text-white mb-3">OUR VISION</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        To become the most trusted residential investment partner in the Northeast — recognized for transparent deals, impeccable renovations, and consistent, compounding returns that endure across generations.
+                    </p>
+                </div>
+
+                <!-- Promise -->
+                <div class="group md:col-span-4 glass-panel p-8 rounded-[28px] hover:border-brandGold transition-all duration-300 hover:-translate-y-2 reveal bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 rounded-full bg-brandGold/10 flex items-center justify-center mb-6 text-brandGold text-2xl group-hover:bg-brandGold group-hover:text-black transition-all ring-1 ring-brandGold/20">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h4 class="font-cinzel text-xl font-bold text-white mb-3">OUR PROMISE</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        No surprises, no shortcuts, no fine print. We commit to clear communication, honest numbers, and workmanship we'd be proud to put our own name on — because our reputation is the real asset.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="py-24 bg-brandDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">The Trinity Standard</h2>
+                <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">OUR CORE VALUES</h3>
+                <p class="text-stone-400 text-sm mt-3">The foundational principles that guide every investment decision we make.</p>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-[minmax(190px,auto)]">
+
+                <div class="group md:col-span-5 md:row-span-2 p-7 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 border border-stone-800 rounded-2xl hover:border-brandGold/60 hover:-translate-y-1 transition-all duration-300 reveal">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold text-xl group-hover:bg-brandGold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500">01</span>
+                    </div>
+                    <h4 class="font-cinzel text-2xl font-bold text-white mb-3">INTEGRITY</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">We do the right thing, always. Honesty and transparency underpin every contract and partnership.</p>
+                </div>
+
+                <div class="group md:col-span-7 p-7 bg-gradient-to-br from-brandGold/10 via-stone-900 to-stone-950 border border-brandGold/20 rounded-2xl hover:border-brandGold/60 hover:-translate-y-1 transition-all duration-300 reveal" style="transition-delay: 80ms;">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold text-xl group-hover:bg-brandGold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500">02</span>
+                    </div>
+                    <h4 class="font-cinzel text-2xl font-bold text-white mb-3">QUALITY</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">We deliver excellence in every detail, from architecture and materials to execution and finish work.</p>
+                </div>
+
+                <div class="group md:col-span-4 p-7 bg-stone-900/80 border border-stone-800 rounded-2xl hover:border-brandGold/60 hover:-translate-y-1 transition-all duration-300 reveal" style="transition-delay: 160ms;">
+                    <div class="w-12 h-12 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold text-xl mb-6 group-hover:bg-brandGold group-hover:text-black transition-all">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h4 class="font-cinzel text-xl font-bold text-white mb-2">VALUE</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">We create value for clients, partners, and neighborhoods through strategic redevelopment.</p>
+                </div>
+
+                <div class="group md:col-span-8 p-7 bg-gradient-to-br from-stone-900 via-stone-900 to-brandGold/5 border border-stone-800 rounded-2xl hover:border-brandGold/60 hover:-translate-y-1 transition-all duration-300 reveal" style="transition-delay: 240ms;">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold text-xl group-hover:bg-brandGold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500">03</span>
+                    </div>
+                    <h4 class="font-cinzel text-2xl font-bold text-white mb-3">GROWTH</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">We build wealth and strong communities, creating compounding returns that endure over generations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKETS SERVED -->
+    <section class="py-24 bg-stone-950 border-t border-stone-800 relative overflow-hidden">
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-brandGold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+
+                <div class="lg:col-span-5 p-8 bg-gradient-to-br from-stone-900 to-stone-950 border border-stone-800 rounded-2xl reveal">
+                    <h2 class="font-cinzel text-xs text-brandGold font-bold uppercase tracking-[0.3em] mb-2">Where We Operate</h2>
+                    <h3 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">ROOTED IN MALDEN.<br><span class="text-brandGold">ACTIVE ACROSS THE NORTHEAST.</span></h3>
+                    <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+                        We concentrate on markets we know intimately — where local knowledge, contractor relationships, and buyer demand create a genuine competitive advantage.
+                    </p>
+                    <a href="index.html#contact" class="group inline-flex items-center gap-2 px-6 py-3.5 bg-brandGold hover:bg-brandGoldHover text-black font-bold text-[11px] uppercase tracking-[0.16em] rounded-sm transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-brandGold/20">
+                        Discuss Your Market <i class="fa-solid fa-arrow-right text-[10px] transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="sm:col-span-2 p-6 bg-gradient-to-br from-brandGold/15 via-stone-900 to-stone-950 border border-brandGold/30 rounded-2xl flex items-start space-x-3 reveal">
+                        <div class="w-10 h-10 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold mt-0.5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold text-white">Malden, MA</h5>
+                            <p class="text-[11px] text-stone-400 mt-0.5">Headquarters &amp; core market</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-stone-900/80 border border-stone-800 rounded-2xl flex items-start space-x-3 reveal" style="transition-delay: 60ms;">
+                        <div class="w-9 h-9 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold mt-0.5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold text-white">Greater Boston</h5>
+                            <p class="text-[11px] text-stone-400 mt-0.5">Select inner-suburb submarkets</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-stone-900/80 border border-stone-800 rounded-2xl flex items-start space-x-3 reveal" style="transition-delay: 120ms;">
+                        <div class="w-9 h-9 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold mt-0.5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold text-white">Middlesex County</h5>
+                            <p class="text-[11px] text-stone-400 mt-0.5">Value-add residential assets</p>
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2 p-5 bg-stone-900/80 border border-stone-800 rounded-2xl flex items-start space-x-3 reveal" style="transition-delay: 180ms;">
+                        <div class="w-9 h-9 rounded-full bg-brandGold/10 flex items-center justify-center text-brandGold mt-0.5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-semibold text-white">Northeast US</h5>
+                            <p class="text-[11px] text-stone-400 mt-0.5">Opportunistic expansion markets</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-gradient-to-r from-stone-900 via-brandDark to-stone-900 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-white mb-3">LET'S BUILD SOMETHING THAT LASTS</h3>
+            <p class="text-stone-300 text-sm max-w-2xl mx-auto mb-8">
+                Whether you're an investor looking for asset-backed returns, a homeowner ready to sell as-is, or a partner with a property in mind — we'd like to hear from you.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="index.html#investors" class="px-8 py-3.5 bg-brandGold hover:bg-brandGoldHover text-black font-semibold text-xs uppercase tracking-widest rounded-sm transition-all shadow-lg shadow-brandGold/20">
+                    Invest With Us
+                </a>
+                <a href="index.html#contact" class="px-8 py-3.5 bg-transparent border border-white/40 hover:border-brandGold hover:text-brandGold text-white font-semibold text-xs uppercase tracking-widest rounded-sm transition-all">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-stone-500 py-12 border-t border-stone-900 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 mb-8">
+
+                <!-- Footer Brand -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 flex items-center justify-center text-brandGold">
+                        <svg viewBox="0 0 100 80" class="w-full h-full fill-current" aria-hidden="true">
+                            <polygon points="50,5 95,45 88,45 50,13 12,45 5,45" />
+                            <polygon points="50,20 80,48 74,48 50,26 26,48 20,48" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-cinzel font-bold text-white tracking-widest">TRINITY INVESTMENT HOMES</span>
+                        <div class="text-[9px] tracking-widest text-brandGold uppercase">Building Value. Creating Legacies.</div>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="index.html#home" class="hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-brandGold">About Us</a>
+                    <a href="index.html#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="index.html#projects" class="hover:text-white transition-colors">Projects</a>
+                    <a href="index.html#investors" class="hover:text-white transition-colors">Investors</a>
+                    <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- Socials -->
+                <div class="flex items-center space-x-4 text-stone-400">
+                    <a href="#" class="hover:text-brandGold transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-brandGold transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-brandGold transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-stone-900 text-center md:flex md:justify-between items-center">
+                <p>&copy; <span id="current-year"></span> Trinity Investment Homes. All rights reserved.</p>
+                <p class="mt-2 md:mt-0 text-[10px] text-stone-600">Designed with Integrity and Excellence in Malden, MA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT INTERACTION -->
+    <script>
+        // Set Year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            mobileMenuBtn.innerHTML = isHidden
+                ? '<i class="fa-solid fa-bars text-2xl"></i>'
+                : '<i class="fa-solid fa-xmark text-2xl"></i>';
+        });
+
+        // Close Mobile Menu on Click Link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars text-2xl"></i>';
+            });
+        });
+
+        // Scroll Reveal Animations
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            revealEls.forEach(el => observer.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+    </script>
+</body>
+</html>
